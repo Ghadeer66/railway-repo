@@ -30,6 +30,6 @@ class AppServiceProvider extends ServiceProvider
         // Redis caching example
         \Illuminate\Support\Facades\Cache::put('test_key', 'Hello Redis!', 600); // cache for 10 minutes
         $value = \Illuminate\Support\Facades\Cache::get('test_key');
-        Log::info('Redis cache value for test_key: ' . $value);
+        // Log::info('Redis cache value for test_key: ' . $value);
     }
 }
